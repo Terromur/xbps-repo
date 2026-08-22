@@ -1,0 +1,18 @@
+# Template file for 'bottles'
+pkgname=bottles
+version=66.2
+revision=1
+archs="x86_64"
+build_style=meson
+hostmakedepends="gettext blueprint-compiler pkg-config
+ gtk4-update-icon-cache desktop-file-utils"
+makedepends="glib-devel gtk4-devel libadwaita-devel"
+depends="python3-chardet python3-icoextract python3-pathvalidate
+ python3-curl python3-patool python3-yara vkbasalt-cli freetype"
+short_desc="Run Windows software and games on Linux"
+maintainer="Naz <ndpm13@ch-naseem.com>"
+license="GPL-3.0-only"
+homepage="https://usebottles.com/"
+changelog="https://github.com/bottlesdevs/Bottles/releases"
+distfiles="https://github.com/bottlesdevs/Bottles/archive/refs/tags/${version}.tar.gz"
+checksum=f6d77f9a161893b406f65a6dab78f535f87981ea7b4dd1e330da970a7aee9ead
